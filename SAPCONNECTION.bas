@@ -22,16 +22,16 @@ On Error GoTo ERR:
 Dim CONNECTER As Boolean
 Dim i As Integer
 Dim LOGON
-Dim mon_mot_de_passe As String
-Dim mon_TKA As String
+'Dim mon_mot_de_passe As String
+'Dim mon_TKA As String
 
 Set SAPGUI = GetObject("SAPGUI")
 
 '***************************************************************************************************************
-'SI NON CONNECTÉ
+'SI NON CONNECTï¿½
 If CONNECTER = True Then
-mon_TKA = Range("B2").value
-mon_mot_de_passe = Range("A2").value
+'mon_TKA = Range("B2").value
+'mon_mot_de_passe = Range("A2").value
 
     'session.findById("wnd[0]").maximize
 '    SESSION.findById("wnd[0]/usr/txtRSYST-BNAME").Text = "mon_TKA"
@@ -73,14 +73,14 @@ LANCERSAPPACZQRS:
     SESSION.findById("wnd[0]").sendVKey 0
     SESSION.findById("wnd[0]").maximize
     SESSION.findById("wnd[0]").SetFocus
-    'Si un SESSION est déjà ouverte, valider puis ouvrir
+    'Si un SESSION est dï¿½jï¿½ ouverte, valider puis ouvrir
     If SESSION.Children.Count > 1 Then
         SESSION.findById("wnd[1]/usr/radMULTI_LOGON_OPT1").Select
         SESSION.findById("wnd[1]/usr/radMULTI_LOGON_OPT1").SetFocus
         SESSION.findById("wnd[1]/tbar[0]/btn[0]").press
     End If
 '***************************************************************************************************************
-'SI DÉJÀ CONNECTÉ
+'SI Dï¿½Jï¿½ CONNECTï¿½
 
 ElseIf CONNECTER = False Then
     
