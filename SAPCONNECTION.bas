@@ -54,6 +54,7 @@ LANCERSAPPACZQRS:
     Set SESSION = CONNECTION.Children(0)
     'SESSION.findById("wnd[0]/usr/txtRSYST-LANGU").Text = "EN"
     'LOGON = InputBox("Entrez votre logon (TKA0xxxxx...) :", "Please enter your SAP DAC Logon")
+    'LOGON = ID.mon_TKA
     LOGON = mon_TKA
     If Left(LOGON, 3) = "TKA" _
     Or Left(LOGON, 2) = "NG" Then
@@ -69,6 +70,7 @@ LANCERSAPPACZQRS:
     
     'InputBox("Please enter your Login :", "Login")
 '    SESSION.findById("wnd[0]/usr/pwdRSYST-BCODE").Text = InputBox("Entrez votre mot de passe :", "Please enter your SAP DAC Password")
+    'SESSION.findById("wnd[0]/usr/pwdRSYST-BCODE").Text = ID.mon_mot_de_passe
     SESSION.findById("wnd[0]/usr/pwdRSYST-BCODE").Text = mon_mot_de_passe
     SESSION.findById("wnd[0]").sendVKey 0
     SESSION.findById("wnd[0]").maximize
