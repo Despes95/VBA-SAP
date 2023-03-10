@@ -4,6 +4,7 @@ Sub Cheek()
 '    SESSION.findById("wnd[0]").SetFocus
     SESSION.findById("wnd[0]/tbar[0]/okcd").Text = "QM02"
     SESSION.findById("wnd[0]").sendVKey 0
+    'SESSION.findById("wnd[0]/usr/ctxtRIWO00-QMNUM").Text = Tools
     SESSION.findById("wnd[0]/usr/ctxtRIWO00-QMNUM").Text = "700438579"
     SESSION.findById("wnd[0]").sendVKey 0
     SESSION.findById("wnd[0]/usr/tabsTAB_GROUP_10/tabp10\TAB11").Select

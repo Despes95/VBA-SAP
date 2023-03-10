@@ -28,7 +28,7 @@ Dim LOGON
 Set SAPGUI = GetObject("SAPGUI")
 
 '***************************************************************************************************************
-'SI NON CONNECT�
+'SI NON CONNECTE
 If CONNECTER = True Then
 'mon_TKA = Range("B2").value
 'mon_mot_de_passe = Range("A2").value
@@ -75,14 +75,14 @@ LANCERSAPPACZQRS:
     SESSION.findById("wnd[0]").sendVKey 0
     SESSION.findById("wnd[0]").maximize
     SESSION.findById("wnd[0]").SetFocus
-    'Si un SESSION est d�j� ouverte, valider puis ouvrir
+    'Si un SESSION est deja ouverte, valider puis ouvrir
     If SESSION.Children.Count > 1 Then
         SESSION.findById("wnd[1]/usr/radMULTI_LOGON_OPT1").Select
         SESSION.findById("wnd[1]/usr/radMULTI_LOGON_OPT1").SetFocus
         SESSION.findById("wnd[1]/tbar[0]/btn[0]").press
     End If
 '***************************************************************************************************************
-'SI D�J� CONNECT�
+'SI DEJA CONNECTE
 
 ElseIf CONNECTER = False Then
     
