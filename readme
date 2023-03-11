@@ -1,0 +1,9 @@
+# Procedure d'instalation
+
+Avoir python d'installer.
+
+## 1 Faire dans le terminal depuis le projet : pip install -r requirements.txt
+
+## 2 xlwings vba import
+
+pour sauvegarder dans le classeur excel

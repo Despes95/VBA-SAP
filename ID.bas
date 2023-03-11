@@ -8,9 +8,9 @@ Public Tools As String
 Sub ID()
 
 'Lire les valeurs des valeurs dans les cellules depuis le fichier Excel
-mon_TKA = Range("A2").value
-mon_mot_de_passe = Range("B2").value
-Langue = Range("C2")
-Tools = Range("D2").value
+mon_TKA = Range("C6").value
+mon_mot_de_passe = Range("E6").value
+Langue = Range("C9")
+Tools = Range("E9").value
 
 End Sub

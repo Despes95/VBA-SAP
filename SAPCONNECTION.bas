@@ -30,8 +30,8 @@ Set SAPGUI = GetObject("SAPGUI")
 '***************************************************************************************************************
 'SI NON CONNECTE
 If CONNECTER = True Then
-'mon_TKA = Range("A2").value
-'mon_mot_de_passe = Range("B2").value
+'mon_TKA = Range("C6").value
+'mon_mot_de_passe = Range("E6").value
 
     'session.findById("wnd[0]").maximize
 '    SESSION.findById("wnd[0]/usr/txtRSYST-BNAME").Text = "mon_TKA"
